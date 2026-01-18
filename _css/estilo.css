@@ -1,0 +1,264 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+@font-face{
+    font-family: 'FonteLogo'; /*nome para a fonte*/
+    src: url(../_fonts/bubblegum-sans-regular.otf); /*nome do arquivo*/
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #dddddd;
+    color: rgba(0,0,0,1);
+
+}
+
+div#interface{
+    width: 1000px; /*delimitar largura*/
+    background-color: #ffffff;
+    margin: -20px auto 0px auto ; /*cima / direita / baixo / esquerda */
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5); /*Cria uma sombre em volta do objeto - deslocamento lateral / deslocamento vertical / espalhamento da sombra / cor da sombra */
+    padding: 10px 10px 10px 10px; /*cima / direita / baixo / esquerda */
+}
+
+   p{ 
+             text-align: justify;
+             text-indent: 50px;  
+        }
+
+a{
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header#cabecalho img#icone{
+    position: absolute;
+    left: 1090px;
+    top: 70px;
+}
+
+header#cabecalho{
+    border-bottom: 1px #606060 solid;/* largura da borda / cor da borda / formato da borda / - borda de baixo*/
+    height: 150px; /*parametro de altura*/
+    background: url(../_imagens/glass-logo-peq.jpg) no-repeat 0px 80px; /*outra forma de adionar uma imagem - deslocamento lateral e deslocamneto vertical*/
+
+}
+
+header#cabecalho h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6); /*sombra no texto*/
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2{
+    font-family: "Titillium Web", sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+}
+/* Formatação de imagens com legendas */
+
+figure.foto-legenda{
+    position: relative;
+    border: 8px solid white;  /*borda*/
+    box-shadow: 1px 1px 4px black; /*sombra*/
+}
+
+figure.foto-legenda img{
+    width: 100%;   /* tamanho ta imagem largura*/
+    height: 100%;  /* tamanho ta imagem altura*/
+}
+
+figure.foto-legenda figcaption{
+    opacity: 0; /* legenda some */
+    position: absolute; /*onde vai ficar a legenda*/
+    top: 0px;
+    background-color: rgba(0,0,0,.4); /*Transparencia em cima da imagem*/
+    color: white;
+    width: 100%;    /*Borda preta ocupando todo o espaço dentro da imagem*/
+    height: 100%;   /*Borda preta ocupando todo o espaço dentro da imagem*/
+    padding: 10px; /*espaço entre as legendas*/
+    box-sizing: border-box;
+    transition: opacity 1s; /*efeito de transição*/
+}
+
+figure.foto-legenda:hover figcaption{
+    opacity: 1; /*Formatação específica para quando passar o mouse por cima da imagem*/
+}
+
+/* Formatação do Menu */
+
+nav#menu {
+    display: block; /*um bloco pode flutuar pela tela*/
+}
+
+nav#menu ul{
+    list-style: none; /*sumir com marcadores*/
+    text-transform: uppercase; /*Letras do menu maiúsculas*/
+    position: absolute; /*para que possa passar por cima dos documentos*/
+    top: -20px; /*vai diminuir o espçao entre a barra superior*/
+    left: 600px; /*para aumentar a distancia do lado esquerdo*/
+}
+
+nav#menu li{
+    display: inline-block; /*faz com que um bloco seja exibido na mesma linha*/
+    background-color: #dddddd; /*coloca uma cor no fundo*/
+    padding: 10px; /*vai criar um espaço dentro da caixa*/
+    margin: 2px; /*Espaço fora da caixa*/
+    transition: background-color 1s; /*vai levar 1 segundo para mudar de uma cor para a outra*/
+}
+
+
+nav#menu li:hover{
+    background-color: #606060; /*quando passar o mouse por cima dos botões ele vai escurecer*/
+}
+
+nav#menu h1{
+    display: none; /*faz com que o menu suma visualmente*/
+}
+
+nav#menu a{
+    color: #000000; /*Cor do link preta*/
+    text-decoration: none; /*para tirar o sublinhando do link*/
+}
+
+nav#menu a:hover{
+    color: #ffffff; /*mudar a cor do link quando mouse passar por cima*/
+    text-decoration: underline; /*para sublinhar o link só quando passar o mouse*/
+}
+
+section#corpo{
+    display: block; /*para ser mostrada como um bloco*/
+    width: 500px; /*largura*/
+    float: left;
+    border-right: 1px solid #606060; /*criar uma borda do lado direiro*/
+    padding-right: 15px; /*afastar a linha do conteudo*/
+}
+
+article#noticia-principal h2{
+      font-size: 13pt;
+      color: #606060;
+      background-color: #dddddd;
+      padding: 5px 0px 5px 10px; /*espacamento entre eles*/
+      margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1{
+    font-family:'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px; 
+    margin-top: 0px;
+}
+
+.direita{
+    text-align: right; /*deixa o texto a direita*/
+}
+
+header#cabecalho-artigo h2{
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+header#cabecalho-artigo h3{
+    font-size: 12pt;
+    color: #60606060;
+}
+
+table#tabelaspec{
+    border: 1px solid #606060; /*borda externa da tabela*/
+    border-spacing: 0px; /*espaço entre as celulas*/
+    margin-left: auto; /*centralizar tabela*/
+    margin-right: auto; /*centralizar tabela*/
+}
+
+table#tabelaspec td{
+    border: 1px solid #606060; /*bordas internas*/
+    padding: 10px; /*espaço interno entre as celulas*/
+    text-align: center; /*alinhamento do texto da celula*/
+    vertical-align: middle; /*alinhamento*/
+}
+
+table#tabelaspec td.ce{
+     color: #ffffff; /*cor da letra*/
+     background-color: #606060; /*cor de fundo*/
+     vertical-align: top; /*alinhamento do texto da celula*/
+     font-weight: bold; /*negrito*/
+}
+
+table#tabelaspec td.cd{
+    background-color: #cecece;
+}
+
+/*titulo da tabela*/
+table#tabelaspec caption{
+       color: #888888; /*cor da fonte*/
+       font-size: 13pt; /*tamanho da letra*/
+       font-weight: bolder; /*negrito*/
+}
+
+table#tabelaspec caption span{
+    display: block; /*vai ser mostrado commo um bloco flutuante vai se desconectar do texto*/
+    float: right; /*flutuação a direita*/
+    color: #000000; /*cor da fonte*/
+    font-size: 8pt; /*tamanho da fonte*/
+    margin-top: 10px; /*aumenta margem do topo*/
+}
+
+aside#lateral{
+    display: block;
+    width: 430px; /*largura da caixa*/
+    float: right;
+    background: #dddddd;
+    padding: 20px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+    
+}
+
+aside#lateral h1{
+     font-family: 'FonteLogo', sans-serif;
+     font-size: 20pt;
+     color: #606060;
+     margin-top: 5px;
+}
+
+aside#lateral h2{
+    background-color: #606060;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 5px;
+}
+
+footer#rodape{
+    clear: both; /*limpar a configuração dos dois lados lateral e corpo*/
+    border-top: 1px solid #606060; /*uma linha em cima*/
+}
+
+footer#rodape p{
+    text-align: center ; /*centralizar*/
+}
+
+video#videomapa{
+    display: block;
+    position: relative;
+    left: 5px;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+video#videoparaquedas{
+    display: block;
+    position: relative;
+    top: -15px;
+    width: 430px;
+}
